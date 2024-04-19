@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>CSS Flags - Animated Flag</title>  
+    <style>  
+        .flag {  
+            width: 200px;  
+            height: 100px;  
+            background-color: red;  
+            position: relative;  
+            animation: wave 2s infinite; /* 应用动画 */  
+        }  
+  
+        .flag:before,  
+        .flag:after {  
+            content: "";  
+            position: absolute;  
+            width: 0;  
+            height: 100%;  
+            background-color: white;  
+        }  
+  
+        .flag:before {  
+            left: 50px;  
+            border-left: 50px solid red;  
+        }  
+  
+        .flag:after {  
+            right: 50px;  
+            border-right: 50px solid red;  
+        }  
+  
+        /* 定义旗帜飘扬的动画 */  
+        @keyframes wave {  
+            0% {  
+                transform: rotate(0deg);  
+            }  
+            50% {  
+                transform: rotate(10deg);  
+            }  
+            100% {  
+                transform: rotate(-10deg);  
+            }  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="flag"></div>  
+</body>  
+</html>

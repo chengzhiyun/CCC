@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHello(){
+            console.log("这是来自函数的：你好！")
+        }
+        sayhello();
+        //定义类
+        class 学生{
+            //对象构造器
+            constructor(专业,学校,姓名){
+                this.专业=专业;
+                this.学校=学校;
+                this.姓名=姓名;
+            }
+            //类中的变量，叫做属性
+            专业="新闻学"
+            //类class中的函数function,叫做方法method
+            打招呼(){
+                console.log("这是来自方法的：你好！")
+            }
+            谈恋爱(){
+                console.log("开始一段美好的恋爱啦~")
+            }
+        }
+    //定义对象
+    //let 昇玟=new Student();
+    //console.log(typeof 昇玟)；
+    //昇玟.昇玟.sayhello();
+    //昇玟.sweet love();
+    //let 中中=new student();
+    //console.log(typeof中中)；
+    //中中.sayhello();
+    //中中.sweetlove();
+    //let 昇玟=转学生
+    //昇玟。专业="文化"
+    console.log(昇玟.专业);
+    昇玟.谈恋爱()
+    const 昇玟=转学生("文化","高级中学","昇玟")
+    const 中中=new 学生("新闻","西北民族大学","中中")
+    console.log(昇玟.专业)
+    console.log(中中,专业)
+    昇玟.打招呼("中中","好久不见，想死你了！")
+    中中.打招呼("昇玟","终于回来了，不准再去美国了")
+    </script>
+    </body>
+</html>
